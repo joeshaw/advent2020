@@ -29,7 +29,7 @@ impl FromStr for Entry {
         Ok(Entry {
             p1: parts[0].parse().unwrap(),
             p2: parts[1].parse().unwrap(),
-            c: parts[2].chars().nth(0).unwrap(),
+            c: parts[2].chars().next().unwrap(),
             password: parts[4].to_string(),
         })
     }
