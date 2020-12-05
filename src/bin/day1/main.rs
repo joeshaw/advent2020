@@ -5,7 +5,7 @@ use std::io::prelude::*;
 use std::io::BufReader;
 
 fn main() {
-    let file = File::open("src/day1/input.txt").expect("unable to open input.txt");
+    let file = File::open("src/bin/day1/input.txt").expect("unable to open input.txt");
     let reader = BufReader::new(file);
 
     let vals: Vec<i32> = reader

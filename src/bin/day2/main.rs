@@ -36,7 +36,7 @@ impl FromStr for Entry {
 }
 
 fn main() {
-    let file = File::open("src/day2/input.txt").expect("unable to open input.txt");
+    let file = File::open("src/bin/day2/input.txt").expect("unable to open input.txt");
     let reader = BufReader::new(file);
 
     let mut part1_count: i32 = 0;

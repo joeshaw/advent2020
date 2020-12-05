@@ -56,7 +56,7 @@ struct Slope {
 }
 
 fn main() {
-    let file = File::open("src/day3/input.txt").expect("unable to open input.txt");
+    let file = File::open("src/bin/day3/input.txt").expect("unable to open input.txt");
     let mut reader = BufReader::new(file);
 
     let forest = Forest::new(&mut reader);
