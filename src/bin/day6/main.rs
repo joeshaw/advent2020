@@ -9,7 +9,6 @@ fn main() {
     // part 1
     let v: usize = contents
         .trim()
-        .clone()
         .split("\n\n")
         .map(|g| g.replace("\n", "").chars().collect::<HashSet<_>>().len())
         .sum();
@@ -29,5 +28,5 @@ fn main() {
                 .len()
         })
         .sum();
-    println!("{:?}", v);
+    println!("{}", v);
 }
